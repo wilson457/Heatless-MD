@@ -120,7 +120,7 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there Heatless-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet Heatless-MD WhatsApp Bot.\n\n *Thanks for using Heatless-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029Vb6QmBO3LdQSbKC7F145 \n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\n\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Heatless-MD Official 🫰 \ud83d\udda4`;
+  let up = `*Hello there Heatless-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet Heatless-MD WhatsApp Bot.\n\n *Thanks for using Heatless-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029Vb6QmBO3LdQSbKC7F145 \n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\nhttps://github.com/Kelvin12350/Heatless-MD\n\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Heatless-MD Official 🫰 \ud83d\udda4`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/p4yxcn.png` }, caption: up })
   }
   })
@@ -169,7 +169,7 @@ const port = process.env.PORT || 9090;
       } 
     }, { statusJidList: [mek.key.participant, jawadlike] });
   }                       
-  if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REPLY === "true"){
+  if (mek.key && mek.key.remoteJid === 'status@broadcast' && config.AUTO_STATUS_REPLY === "false"){
   const user = mek.key.participant
   const text = `${config.AUTO_STATUS_MSG}`
   await conn.sendMessage(user, { text: text, react: { text: '💜', key: mek.key } }, { quoted: mek })
@@ -264,7 +264,7 @@ if (senderNumber.includes("923237045919") && !isReact) {
   //==========public react============//
   
 // Auto React for all messages (public and owner)
-if (!isReact && config.AUTO_REACT === 'true') {
+if (!isReact && config.AUTO_REACT === 'false') {
     const reactions = [
         '🌼', '❤️', '💐', '🔥', '🏵️', '❄️', '🧊', '🐳', '💥', '🥀', '❤‍🔥', '🥹', '😩', '🫣', 
         '🤭', '👻', '👾', '🫶', '😻', '🙌', '🫂', '🫀', '👩‍🦰', '🧑‍🦰', '👩‍⚕️', '🧑‍⚕️', '🧕', 
