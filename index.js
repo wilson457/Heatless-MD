@@ -69,7 +69,7 @@ const {
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
     if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
     
-    const sessdata = config.SESSION_ID.replace("E3_HACKER_MD~", '');
+    const sessdata = config.SESSION_ID.replace("Heatless-MD~", '');
     try {
         // Decode base64 string
         const decodedData = Buffer.from(sessdata, 'base64').toString('utf-8');
@@ -120,7 +120,7 @@ const port = process.env.PORT || 9090;
   console.log('Plugins installed successful ✅')
   console.log('Bot connected to whatsapp ✅')
   
-  let up = `*Hello there E3_HACKER_MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet E3_HACKER_MD WhatsApp Bot.\n\n *Thanks for using E3_HACKER_MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029VarfjW04tRrmwfb8x306 \n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\nhttps://github.com/waqa827/E3_HACKER_MD\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ E3_HACKER_MD Official 🫰 \ud83d\udda4`;
+  let up = `*Hello there Heatless-MD User! \ud83d\udc4b\ud83c\udffb* \n\n> Simple , Straight Forward But Loaded With Features \ud83c\udf8a, Meet Heatless-MD WhatsApp Bot.\n\n *Thanks for using Heatless-MD \ud83d\udea9* \n\n> Join WhatsApp Channel :- ⤵️\n \nhttps://whatsapp.com/channel/0029Vb6QmBO3LdQSbKC7F145 \n\n- *YOUR PREFIX:* = ${prefix}\n\nDont forget to give star to repo ⬇️\n\n\n\n> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ Heatless-MD Official 🫰 \ud83d\udda4`;
     conn.sendMessage(conn.user.id, { image: { url: `https://files.catbox.moe/p4yxcn.png` }, caption: up })
   }
   })
